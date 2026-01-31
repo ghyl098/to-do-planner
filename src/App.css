@@ -1,0 +1,118 @@
+/* Reset and body */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Main content container */
+.main-content {
+  padding: 1rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background: #0052cc;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Navbar for small screens */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+}
+
+/* Task Card */
+.task-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-3px);
+}
+
+.task-card.completed {
+  border-left: 6px solid #4caf50;
+}
+
+.task-card.pending {
+  border-left: 6px solid #ff9800;
+}
+
+.task-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.task-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Home Page */
+.home-container {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: white;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.home-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.home-container p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #555;
+}
